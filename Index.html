@@ -1,0 +1,26 @@
+<html>
+<title id="title" style="height: fit-content;
+width: fit-content;
+font-size: larger;
+color: black;
+align-items: center;
+">the Lexical Test</title>
+<p id ="para"style="height: fit-content;
+width: fit-content;
+font-size: larger;
+color: black;
+align-items: center;"></p>
+<script>
+
+    var a = "the add";
+
+    function lexicalOfGlobal() {
+        var titleElement = document.getElementById("para");
+        titleElement.innerHTML = a;
+    }
+
+
+    lexicalOfGlobal();
+</script>
+
+</html>
